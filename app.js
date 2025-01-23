@@ -9,11 +9,12 @@ import taskRouter from './routers/taskRouter.js';
 
 
 const app=express()
+
 app.use(cors({
     credentials:true,
     origin:true,
 }));
-
+app.use(express.static("/var/www/todo/awstodo_frd/dist"))
 
 
 
